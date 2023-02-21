@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#button {
+    margin: 15px auto 15px;
+    display: block;
+    text-align: center;
+}
+
+table {
+    margin: 0 auto;
+    width: 80%;
+}
+
+table, th, td {
+    border: 1px solid;
+  }
+
+tr, td {
+    margin: 150px;
+}
+
+td {
+    padding: 5px;
+    text-align: center;
+}
+
+#table-head {
+    color: violet;
+}
+
+ </style>
+</head>
+<body>
+    <input id="create" type="text" placeholder="Nhập tên Students">
+    <button onclick="createStudent()">Create</button>
+    <br>
+
+    <input id="search" type="text" placeholder="Nhập tên Students">
+    <button onclick="searchStudent()">Search</button>
+    
+    <table>
+        <thead id="table-head">
+            <th colspan="4">STUDENT MANAGE</th>
+        </thead>
+        <thead>
+            <th>STT</th>
+            <th>Name</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </thead>
+        <tbody id="list">
+            <!-- <tr>
+            <td>1</td>
+            <td>Ngân</td>
+            <td>Edit</td>
+            <td>Delete</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Thế</td>
+            <td>Edit</td>
+            <td>Delete</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Trâm</td>
+            <td>Edit</td>
+            <td>Delete</td>
+        </tr>--> 
+        </tbody>
+    </table>
+
+
+
+    <script src="test.js"></script>
