@@ -7,19 +7,19 @@
     <title>Document</title>
  <style>
     * {
-    margin: 0;
-    padding: 0;
+    margin: auto;
+    padding: auto;
     box-sizing: border-box;
 }
 
 #button {
-    margin: 15px auto 15px;
-    display: block;
+    margin:auto;
+    display: inline-block;
     text-align: center;
 }
 
 table {
-    margin: 0 auto;
+    margin: auto;
     width: 80%;
 }
 
@@ -36,52 +36,42 @@ td {
     text-align: center;
 }
 
-#table-head {
-    color: violet;
-}
-
  </style>
 </head>
 <body>
-    <input id="create" type="text" placeholder="Nhập tên Students">
+    <form></form>
+    <div class="col-sm-12">
+        <h1 class="text-center text-while">-----STUDENT MANAGE-----</h1>
+    </div>
+    <div>
+    <h3>Name</h3>
+    <input id="name" type="text" placeholder="please fill to create student"><br>
+    <h3>Age</h3>
+    <input id="age" type="text" placeholder="please fill to create student"><br>
+    <h3>Address</h3>
+    <input id="address" type="text" placeholder="please fill to create student"><br>
     <button onclick="createStudent()">Create</button>
     <br>
 
-    <input id="search" type="text" placeholder="Nhập tên Students">
+    <input id="search" type="text" placeholder="Nhập tên hs">
     <button onclick="searchStudent()">Search</button>
+    </div>
     
-    <table>
-        <thead id="table-head">
-            <th colspan="4">STUDENT MANAGE</th>
-        </thead>
+    
+    <table id="table">
         <thead>
             <th>STT</th>
             <th>Name</th>
+            <th>Age</th>
+            <th>Address</th>
             <th>Edit</th>
             <th>Delete</th>
         </thead>
-        <tbody id="list">
-            <!-- <tr>
-            <td>1</td>
-            <td>Ngân</td>
-            <td>Edit</td>
-            <td>Delete</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Thế</td>
-            <td>Edit</td>
-            <td>Delete</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>Trâm</td>
-            <td>Edit</td>
-            <td>Delete</td>
-        </tr>--> 
+        <tbody>
+           
         </tbody>
     </table>
 
-
-
-    <script src="test.js"></script>
+    <script src="ktra.js"></script>
+</body>
+</html>
